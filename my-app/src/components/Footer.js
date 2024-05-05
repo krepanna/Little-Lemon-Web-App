@@ -1,38 +1,38 @@
 import React from "react";
-import logo from '../Logo.svg';
+import logo from '../images/logoMonochrome.svg';
 
 const Footer = () => {
     return (
         <footer>
-        <ul>
-            <li><a href=""><img src={logo} alt="logo"></img></a></li>
-            <li>
-                <ul>
-                    <li><a href="">Doormat Navigation</a></li>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Reservation</a></li>
-                    <li><a href="">Order Online</a></li>
-                    <li><a href="">Login</a></li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li>Contact</li>
-                    <li>Address</li>
-                    <li>Phone Number</li>
-                    <li>Email</li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li><a href="">Social Media Links</a></li>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">Twitter</a></li>
-                </ul>
-            </li>
-        </ul>
+            <div className="container">
+                <div className="logo"><a href=""><img src={logo} alt="logo"></img></a></div>
+                <div className="doormat-navigation">
+                    <ul>
+                        <li><a href=""><h4>Doormat Navigation</h4></a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Reservation</a></li>
+                        <li><a href="">Order Online</a></li>
+                        <li><a href="">Login</a></li>
+                    </ul>
+                </div>
+                <div className="contact">
+                    <ul>
+                        <li><a href=""><h4>Contact</h4></a></li>
+                        <li><a href="">Address</a></li>
+                        <li><a href="">Phone Number</a></li>
+                        <li><a href="">Email</a></li>
+                    </ul>
+                </div>
+                <div className="social">
+                    <ul>
+                        <li><a href=""><h4>Social Media Links</h4></a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
         </footer>
     );
 }

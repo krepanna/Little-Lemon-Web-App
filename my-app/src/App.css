@@ -1,38 +1,369 @@
-.App {
-  text-align: center;
+/* Override default style and set padding and margin to nothing */
+html {
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "karla";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'markazi';
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 10px 0;
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 10px 0;
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+img {
+  width: 100%
+}
+
+button {
+  font-family: karla;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.container {
+  max-width: 860px;
+  overflow: visible;
+  /* background-color: bisque; */
+  margin: auto;
+}
+
+.hidden-for-desktop {
+  display: none;
+}
+.navbar {
+  background-color: #edefee;
+  height: 4rem;
+}
+
+nav {
+  padding: 1rem;
+}
+
+.navbar a {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-right: 1fr;
+  color: #495E57;
+}
+
+.navbar ul {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: auto;
+}
+
+header {
+  background-color: #495E57;
+  padding: 2rem;
+
+}
+
+.grid {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2rem;
+}
+
+header .left {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header p {
+  margin-top: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header button {
+  background-color: #f4ce14;
+  margin-top: 2rem;
+}
+
+.highlights {
+  background-color: #EDEFEE;
+  padding: 2rem;
+}
+
+.highlights .top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.highlights .bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+.highlights button {
+  background-color: #495E57;
+  color: #fff;
+}
+
+.special-card {
+  border: solid 1px;
+  border-radius: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  max-width: 200px;
+  height: 350px;
+  background-color: #fff;
+}
+
+.special-card figure img {
+  border-radius: 8px 8px 0 0;
+}
+
+.special-card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.special-card h3 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.special-card p {
+  padding-bottom: 5px;
+}
+
+.special-card-delivery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials {
+  background-color: #FBDABB;
+  padding: 2rem;
+}
+
+.testimonials > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimony-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimony-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 5rem;
+  max-width: 200px;
+  height: auto;
+  box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2),
+               7px  7px 20px rgba(0, 0, 0, 0.2)
+}
+
+.customer-photo {
+  height: 100%;
+  clip-path: circle();
+}
+
+.circle {
+  background-color: transparent;
+  border:3px solid #495E57;
+  height:90px;
+  width:90px;
+  margin-top: -45px;
+
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+}
+
+.testimony-card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.testimony-card-details > h3, p {
+  margin-bottom: 10px;
+}
+
+.testimony-rating {
+  display: flex;
+}
+
+.about {
+  background-color: #EE9972;
+  padding: 2rem;
+}
+
+.about .container {
+  display: flex;
+  flex: 1 1 0;
+}
+
+.about .left {
+  width: 60%;
+  padding-right: 2rem;
+}
+
+.about .right {
+  width: 40%;
+  position: relative;
+}
+
+.about img {
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2),
+  7px  7px 20px rgba(0, 0, 0, 0.2)
+}
+
+.about .img1 {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 90%;
+  bottom: 0;
+}
+.about .img2 {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 67%;
+  right: 0;
+}
+
+footer {
+  background-color: #495E57;
+  padding: 2rem;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "logo nav contact social";
+}
+
+footer .logo {
+  grid-area: logo;
+}
+
+footer .doormat-navigation {
+  grid-area: nav;
+}
+
+footer .contact {
+  grid-area: contact;
+}
+
+footer .social {
+  grid-area: social;
+}
+
+footer img {
+  width: 5rem;
+}
+
+footer h4 {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .hidden-for-desktop {
+    visibility: visible;
+    display: inline-block;
   }
-  to {
-    transform: rotate(360deg);
+
+  nav li:not(:first-child) {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    background-color: #EDEFEE;
+  }
+
+  nav li:not(:first-child) {
+    padding: 1rem;
+  }
+
+  header .right {
+    display: none;
+  }
+
+  .about .right {
+    display: none;
+  }
+
+  footer .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "logo nav" "contact contact" "social social";
+    justify-items: center;
+    align-items: center;
+  }
+
+  footer h4 {
+    display: none;
+  }
+
+  footer li {
+    padding-bottom: 1rem;
   }
 }
