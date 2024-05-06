@@ -359,7 +359,7 @@ footer h4 {
     align-items: center;
   }
 
-  footer h4 {
+  footer li>h4 {
     display: none;
   }
 

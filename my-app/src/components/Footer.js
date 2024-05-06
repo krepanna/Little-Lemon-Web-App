@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="logo"><a href=""><img src={logo} alt="logo"></img></a></div>
                 <div className="doormat-navigation">
                     <ul>
-                        <li><a href=""><h4>Doormat Navigation</h4></a></li>
+                        <li><h4>Doormat Navigation</h4></li>
                         <li><a href="">Home</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Reservation</a></li>
@@ -18,7 +18,7 @@ const Footer = () => {
                 </div>
                 <div className="contact">
                     <ul>
-                        <li><a href=""><h4>Contact</h4></a></li>
+                        <li><h4>Contact</h4></li>
                         <li><a href="">Address</a></li>
                         <li><a href="">Phone Number</a></li>
                         <li><a href="">Email</a></li>
@@ -26,7 +26,7 @@ const Footer = () => {
                 </div>
                 <div className="social">
                     <ul>
-                        <li><a href=""><h4>Social Media Links</h4></a></li>
+                        <li><h4>Social Media Links</h4></li>
                         <li><a href="">Instagram</a></li>
                         <li><a href="">Facebook</a></li>
                         <li><a href="">Twitter</a></li>
