@@ -1,19 +1,18 @@
 import React from "react";
-import Yolanda from '../images/Yolanda.png';
 import starIcon from '../images/starIcon.svg';
 
-const TestimonyCard = () => {
+const TestimonyCard = ({name, feedback, photo}) => {
 
     const star = <img src={starIcon} style={{ width: "30px", height: "30px" }} alt="Star Icon" />
 
     return (
         <article className="testimony-card">
             <figure className="circle">
-                <img className="customer-photo" src={Yolanda} alt="Customer Yolanda" />
+                <img className="customer-photo" src={photo} alt="Customer {name} "/>
             </figure>
             <div className="testimony-card-details">
-                <h3>Yolanda</h3>
-                <p> Gread food and atmosphere!</p>
+                <h3>{name}</h3>
+                <p>{feedback}</p>
                 <div className="testimony-rating">
                     {star}
                     {star}

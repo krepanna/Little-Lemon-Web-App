@@ -1,17 +1,18 @@
 import React from "react";
 import logo from '../images/logoMonochrome.svg';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
         <footer>
             <div className="container">
-                <div className="logo"><a href=""><img src={logo} alt="logo"></img></a></div>
+                <div className="logo"><Link to="/"><img src={logo} alt="logo"></img></Link></div>
                 <div className="doormat-navigation">
                     <ul>
                         <li><h4>Doormat Navigation</h4></li>
-                        <li><a href="">Home</a></li>
+                        <li><Link to="/">Home</Link></li>
                         <li><a href="">About</a></li>
-                        <li><a href="">Reservation</a></li>
+                        <li><Link to="/reservations">Reservation</Link></li>
                         <li><a href="">Order Online</a></li>
                         <li><a href="">Login</a></li>
                     </ul>

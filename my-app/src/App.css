@@ -69,13 +69,18 @@ button {
 }
 
 nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar li:not(:last-child) {
   padding: 1rem;
 }
 
 .navbar a {
   text-transform: uppercase;
   font-weight: 500;
-  margin-right: 1fr;
   color: #495E57;
 }
 
@@ -147,6 +152,8 @@ header button {
 
 .special-card figure img {
   border-radius: 8px 8px 0 0;
+  height: 9rem;
+  object-fit: cover;
 }
 
 .special-card-details {
@@ -319,27 +326,30 @@ footer h4 {
     display: inline-block;
   }
 
-  nav li:not(:first-child) {
-    display: none;
+  nav li {
+    padding: 1rem;
   }
 
   nav {
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse;
   }
 
-  .navbar ul {
+  nav ul {
+    display: flex;
     flex-direction: column;
     position: absolute;
     align-items: flex-start;
-    top: 0;
+    top: 3rem;
     left: 0;
     background-color: #EDEFEE;
   }
 
-  nav li:not(:first-child) {
-    padding: 1rem;
+  .closed {
+    visibility: hidden;
+  }
+  .open {
+    visibility: visible;
   }
 
   header .right {

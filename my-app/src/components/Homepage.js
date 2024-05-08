@@ -3,7 +3,6 @@ import Header from './Header';
 import Highlights from './Highlights';
 import Testimonials from './Testimonials';
 import About from './About';
-import Footer from './Footer';
 
 function Homepage() {
   return (
@@ -12,7 +11,6 @@ function Homepage() {
         <Highlights />
         <Testimonials />
         <About />
-        <Footer />
     </>
   );
 }
